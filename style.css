@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: 'PlayfairDisplay-Regular';
+    src: url('fonts/PlayfairDisplay-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Medium';
+    src: url('fonts/PlayfairDisplay-Medium.ttf');
+}
+@font-face {
+    font-family: 'Karla-Medium';
+    src: url("fonts/Karla-Medium.ttf");
+}
+body{
+    padding: 40px;
+}
+
+
+.light-theme{
+    color:#FFFDEE;
+}
+.logo{
+    color:#403931;
+    font-family: 'PlayfairDisplay-Regular' , sans-serif;
+    font-size: 48px;
+    letter-spacing: -10px;
+}
+.bas{
+    width: 100%; /* Устанавливаем ширину контейнера */
+    height: 100%; /* Устанавливаем высоту контейнера */
+    border-radius: 40px;
+}
+
+.overlay {
+    position: absolute; /* Абсолютное позиционирование текста */
+    top: 50%; /* Центрируем текст по вертикали */
+    left: 50%; /* Центрируем текст по горизонтали */
+    transform: translate(-50%, -50%); /* Сдвигаем текст для точного центрирования */
+    color: #403931; /* Цвет текста */
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для текста */
+    padding: 10px; /* Отступы вокруг текста */
+    border-radius: 5px; /* Скругленные углы */
+    text-align: center; /* Центрируем текст */
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Выравнивание по центру экрана */
+    margin: 0;
+    background-color: #f0f0f0; /* Цвет фона страницы */
+}
+
+.bas {
+    width: 511px; /* Ширина прямоугольника */
+    height: 900px; /* Высота прямоугольника */
+    border-radius: 40px; /* Радиус закругления углов */
+    overflow: hidden; /* Обрезка содержимого, выходящего за пределы */
+    position: relative; /* Для позиционирования текста */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень для эффекта */
+}
+
+.bas img {
+    width: 100%; /* Растянуть изображение по ширине */
+    height: 100%; /* Растянуть изображение по высоте */
+    object-fit: cover; /* Обрезка изображения, чтобы заполнить прямоугольник */
+}
+
+.bas_name {
+    position: absolute; /* Позиционирование текста поверх изображения */
+    top: 50%; /* Центрирование текста по вертикали */
+    left: 50%; /* Центрирование текста по горизонтали */
+    transform: translate(-50%, -50%); /* Центрирование текста */
+    color: white; /* Цвет текста */
+    font-size: 24px; /* Размер шрифта */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Тень текста для лучшей читаемости */
+}
+.content {
+    display: flex; /* Используем Flexbox для контейнера */
+    flex-direction: column; /* Располагаем элементы вертикально */
+    gap: 20px; /* Расстояние между элементами */
+}
+
+.history_box {
+    background-color: #FFFDEE; /* Цвет фона для блока истории */
+    padding: 15px; /* Внутренние отступы */
+    border-radius: 30px; /* Закругление углов */
+    text-align: center; /* Центрирование текста */
+    font-weight: bold; /* Жирный текст */
+    cursor: pointer; /* Указатель курсора на элементе */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+    color: #403931;
+    width: 334px;
+    height: 50px;
+   
+}
+
+.history_box:hover {
+    background-color: #d0d0d0; /* Цвет фона при наведении */
+}
